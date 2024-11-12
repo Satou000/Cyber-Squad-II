@@ -5,8 +5,11 @@
   align-items: center;
   background-color: #151820;
   padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que o nav fique acima de outros elementos */
 }
-
 .menu-nav ul {
   list-style-type: none;
   padding: 0;
@@ -16,18 +19,15 @@
   flex-wrap: wrap;
   font-family: var(--nav-font);
 }
-
 .menu-nav li {
   display: inline-block;
   padding: 0 40px;
   margin: 0 20px;
   position: relative;
 }
-
 .menu-nav li:hover {
   transform: scale(1.1);
 }
-
 nav a {
   text-decoration: none;
   color: rgb(178, 178, 197);
@@ -35,7 +35,6 @@ nav a {
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
-
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -44,14 +43,12 @@ nav a {
   color: #ffffff;
   cursor: pointer;
 }
-
 /* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
     margin: 10px;
   }
-
   .menu-itens {
     display: none;
     flex-direction: column;
@@ -62,19 +59,44 @@ nav a {
     left: 0;
     z-index: 1;
   }
-
-  .menu-itens.show {
-    display: flex;
-  }
-
   .menu-nav ul {
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
-
   .menu-nav li {
     padding: 10px 0;
     margin: 0;
   }
+  .menu-itens {
+    display: none;
+  }
+  .menu-itens.show {
+    display: block;
+  }
+}
+
+/* Logo */
+#cabecalho-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.cabecalho-logo {
+  width: 96px;
+  height: 110px;
+  display: block;
+  margin: 1px auto 0;
+  transition: transform 0.2s;
+}
+
+.cabecalho-logo:hover {
+  transform: scale(1);
+}
+
+#img-acima {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
