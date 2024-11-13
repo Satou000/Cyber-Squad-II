@@ -56,10 +56,6 @@
   border-radius: 10px;
 }
 
-.small-gap {
-  padding-top: 15%;
-}
-
 @media (max-width: 768px) { /* Ajuste este valor conforme necessário */
   .equipe {
     padding: 0px 10px 0px 10px;

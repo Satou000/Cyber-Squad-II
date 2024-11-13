@@ -90,6 +90,10 @@
   transform: translateY(1px);
 }
 
+.small-gap {
+  padding-top: 15%;
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
   .nosso-projeto {
@@ -123,5 +127,9 @@
 
   .botao-detalhes {
     width: 100%;
+  }
+  
+  .small-gap {
+  padding-top: 35%;
   }
 }
