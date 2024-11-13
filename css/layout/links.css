@@ -95,8 +95,10 @@
     align-items: center; /* Centraliza os botões */
   }
 
-  .outros-botoes .botao-outros {
-    justify-content: center; /* Centraliza o texto dentro do botão */
+  .botao-outros,
+  .botao-detalhes {
+    width: 100%; /* Define a largura como 100% */
+    max-width: none; /* Remove a largura máxima */
   }
 }
 

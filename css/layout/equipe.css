@@ -62,6 +62,17 @@
       margin-top: 0; /* Adiciona um espaço acima da imagem quando em coluna */
       max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
     }
+    
+    .sobre-nos-p {
+    max-width: 90%; /* Aumenta a largura máxima em telas menores */
+    padding: 0 20px; /* Adiciona padding para espaçamento */
+    }
 }
 
+@media (max-width: 480px) {
+  .sobre-nos-p {
+    max-width: 100%; /* Aumenta a largura máxima em telas ainda menores */
+    padding: 0 10px; /* Ajusta o padding para telas menores */
+  } 
+}
   
