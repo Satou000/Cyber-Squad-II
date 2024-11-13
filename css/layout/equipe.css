@@ -2,7 +2,7 @@
   display: flex;
   align-items: flex-start;
   gap: 150px; /* Espaçamento entre a coluna de texto e a imagem */
-  padding: 100px 80px;
+  padding: 0px 100px 80px 80px;
   margin-bottom: 0em;
 }
 
@@ -12,6 +12,7 @@
 }
 
 .sobre-nos {
+  padding: 0px 80px 0px;
   font-size: 2.5em;
   font-family: var(--titulos);
   color: #fff;
@@ -24,6 +25,7 @@
 }
 
 .conheca-nos {
+  padding: 0px 0px 0px 80px;
   font-family: var(--titulos);
   font-size: 1.5em;
   color: #fff;  
@@ -36,11 +38,14 @@
 }
 
 .sobre-nos-p {
+  padding: 0px 0px 0px 0px;
   font-size: 1em;
   line-height: 2;
   color: #fff;
   text-align: justify;
   font-family: var(--p-font);
+  max-width: 1600px; /* Define uma largura máxima padrão */
+  margin: 0 auto; /* Centraliza o parágrafo */
 }
 
 .equipe img {
@@ -49,30 +54,43 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 5em;
 }
 
 @media (max-width: 768px) { /* Ajuste este valor conforme necessário */
-    .equipe {
-      flex-direction: column; /* Muda a direção do flex para coluna */
-      align-items: center; /* Centraliza os itens */
-    }
-  
-    .equipe img {
-      margin-top: 0; /* Adiciona um espaço acima da imagem quando em coluna */
-      max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
-    }
-    
-    .sobre-nos-p {
-    max-width: 90%; /* Aumenta a largura máxima em telas menores */
-    padding: 0 20px; /* Adiciona padding para espaçamento */
-    }
+  .equipe {
+    padding: 0px 10px 0px 10px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .sobre-nos {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .conheca-nos {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .sobre-nos-conteudo {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .sobre-nos-p {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .equipe img {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { /* Ajuste este valor conforme necessário */
   .sobre-nos-p {
-    max-width: 100%; /* Aumenta a largura máxima em telas ainda menores */
-    padding: 0 10px; /* Ajusta o padding para telas menores */
-  } 
+    max-width: 100%;
+    padding: 0 10px; /* Adiciona um pouco de padding para evitar que o texto encoste nas bordas */
+  }
 }
-  
