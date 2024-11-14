@@ -23,9 +23,13 @@
             <button id="menuToggle" class="menu-toggle">&#9776;</button>
             <ul class="menu-itens" id="menuItens">
               <li><a class="links negrito" href="../index.html">Home</a></li>
-              <li><a class="links" href="../html/sobre-nos.html">Sobre nós</a></li>
+              <li>
+                <a class="links" href="../html/sobre-nos.html">Sobre nós</a>
+              </li>
               <li><a class="links" href="../html/projeto.html">Projeto</a></li>
-              <li><a class="links" href="../html/portfolio.html">Portfólio</a></li>
+              <li>
+                <a class="links" href="../html/portfolio.html">Portfólio</a>
+              </li>
               <li><a class="links" href="../html/pitch.html">Pitch</a></li>
               <li><a class="links" href="../html/contato.html">Contato</a></li>
             </ul>
@@ -33,247 +37,114 @@
         </nav>
       </header>
       <div class="msg-principal">
-        <img src="../img/Projeto_titulo.png" class="titulo-principal" />
+        <img src="../img/Sobre_Projeto_Titulo.png" class="titulo-principal" />
         <p class="texto-principal">
-          Realizamos a montagem de um veículo autônomo em escala, no qual foi
-          programado para detectar obstáculos e desviar-se deles. Para tanto,
-          foram utilizados sensores ultrassônicos e um controlador Arduíno para
-          processar dados e tomar decisões em tempo real, baseadas no ambiente
-          inserido. O projeto foi desenvolvido no intuito de participar da
-          competição Robocar Race 2024, promovida pela FATEC Santo André e a
-          UFABC.
+          Um veículo autônomo em escala representa um grande avanço tecnológico
+          da área automotiva. É um robô que, por meio de uma combinação de
+          sensores, programas e sistemas de comunicação, são capazes de analisar
+          o ambiente ao seu redor, seguir um trajeto e desviar de obstáculos de
+          maneira independente.
         </p>
       </div>
     </div>
     <div class="small-gap">
-      <div class="sobre-nos-conteudo">
+      <div class="home-page-3">
         <h2 class="sobre-nos">Temática</h2>
         <section class="equipe">
-          <p class="sobre-nos-p">
-            O projeto foi desenvolvido com base no conceito de Cyberpunk,
-            buscando oferecer uma visão tecnológica que reflete a complexidade
-            dos ambientes urbanos. Considerando que o carrinho foi projetado
-            para participar de uma competição de carros autônomos, realizada ao
-            ar livre na AARC do ABC, diversos fatores que simulam um ambiente
-            urbano precisaram ser levados em consideração, tais como o relevo do
-            terreno, as condições climáticas e a limitação de espaço a fim de se
-            obter sucesso na prova.
-          </p>
+          <div>
+            <p class="sobre-nos-p">
+              O nosso projeto foi inserido no conceito de Cyberpunk. Desta
+              forma, buscando oferecer uma visão tecnológica que refletisse a
+              complexidade dos ambientes urbanos.
+            </p>
+            <br />
+            <p class="sobre-nos-p">
+              Considerando que o carrinho foi projetado para participar de uma
+              competição de carros autônomos, realizada ao ar livre na AARC do
+              ABC, diversos fatores que simulam um ambiente urbano precisaram
+              ser levados em consideração, tais como o relevo do terreno, as
+              condições climáticas e a limitação de espaço a fim de se obter
+              sucesso na prova.
+            </p>
+          </div>
           <img src="../img/temática.png" alt="Imagem da temática" />
         </section>
         <h2 class="sobre-nos">Design da bolha</h2>
         <section class="equipe">
-          <img src="../img/bolha3.jpg" alt="Imagem da bolha" />
-          <p class="sobre-nos-p">
-            Inspirada no modelo de carro Mizutani Shion, um cupê esportivo,
-            nossa bolha adota a estética de um dos carros do jogo Cyberpunk
-            2077, um jogo de ação e RPG ambientado numa metrópole distópica,
-            aproveitando o gancho de nossa temática. O desenho foi projetado no
-            software de modelagem 3D Onshape, e impresso em impressora 3D.
-          </p>
-        </section>
-        <h2 class="sobre-nos">Design do chassi</h2>
-        <section class="equipe">
-          <p class="sobre-nos-p">
-            Nosso chassi foi projetado no software de modelagem 3D Onshape, e
-            impresso na impressora de corte à laser, em MDF, que oferece a
-            combinação ideal entre leveza e resistência estrutural. Ele permitiu
-            que o chassi suportasse os componentes eletrônicos com estabilidade,
-            além de permanecer resistente durante testes e experimentações.
-          </p>
-          <img src="../img/chassi5.jpg" alt="Imagem do chassi" />
-        </section>
-        <h2 class="sobre-nos">Principais componentes e funcionamento</h2>
-        <section class="equipe">
-          <img src="../img/arduino.png" alt="Imagem do Arduíno" />
-          <p class="sobre-nos-p">
-            <strong>Arduíno UNO:</strong> Atua como cérebro, programado para
-            controlar as ações do robô com base nos sinais recebidos dos
-            sensores. O cabo USB permite conectar a placa ao computador para
-            programá-la, e os pinos facilitam a conexão de outros componentes.
-          </p>
-        </section>
-        <section class="equipe">
-          <p class="sobre-nos-p">
-            <strong>Sensor de Distância Ultrassônico HC-SR04:</strong> O sensor
-            ultrassônico detecta os obstáculos na frente do robô. Ele emite
-            ondas ultrassônicas de 40 kHz que ao refletirem em objetos próximos
-            e retornam ao sensor, que envia um pulso ao Arduino, indicando o
-            tempo que a onda levou para ir e voltar e então ao sensor calcular a
-            distância até os obstáculos e desviar deles.
-          </p>
-          <img src="../img/Fundo_Projeto.png" alt="Imagem do sensor" />
-        </section>
-        <section class="equipe">
-          <img src="../img/chassi1.jpg" alt="Imagem do shield" />
-          <p class="sobre-nos-p">
-            <strong>Motor Shield L293D Ponte H:</strong> Usado para controlar a
-            direção e a velocidade dos motores. Ele usa a ponte H, que permite
-            que o motor DC gire tanto no sentido horário quanto anti-horário,
-            essencial para o controle do movimento do robô.
-          </p>
-        </section>
-        <section class="equipe">
-          <p class="sobre-nos-p">
-            <strong>Fonte de Energia:</strong> O robô é alimentado por uma
-            bateria de 9V, responsável por fornecer energia à placa Arduino, aos
-            motores e aos outros componentes. A conexão é feita através de um
-            plug com saída P4, que liga a bateria diretamente à placa,
-            garantindo um fornecimento de energia confiável. Para ligar e
-            desligar, uma chave gangorra de 2 terminais atua como interruptor
-            principal, controlando o fluxo de energia.
-          </p>
-          <img src="../img/chassi3.jpg" alt="Imagem da fonte de energia" />
-        </section>
-        <h2 class="sobre-nos">Código</h2>
-        <section class="equipe">
-          <pre class="sobre-nos-p">
-            <code>
-              // Carrinho em C
-              #define LADO_ESQUERDO_T A0
-              #define LADO_ESQUERDO_E A1
-              #define LADO_FRENTE_T A2
-              #define LADO_FRENTE_E A3
-              #define LADO_DIREITO_T A4
-              #define LADO_DIREITO_E A5
-
-              // Ponte H e Motores
-              #define MOTOR_FRT_D 10
-              #define MOTOR_FRT_E 11
-              #define MOTOR_TRS_D 5
-              #define MOTOR_TRS_E 6
-              #define RE_FRT_D 8
-              #define RE_FRT_E 12
-              #define RE_TRS_D 4
-              #define RE_TRS_E 7
-
-              #define VELOCIDADE_DO_SOM 0.00034029
-
-              void setup() {
-                pinMode(LADO_ESQUERDO_T, OUTPUT);
-                pinMode(LADO_ESQUERDO_E, INPUT);
-                pinMode(LADO_FRENTE_T, OUTPUT);
-                pinMode(LADO_FRENTE_E, INPUT);
-                pinMode(LADO_DIREITO_T, OUTPUT);
-                pinMode(LADO_DIREITO_E, INPUT);
-                
-                digitalWrite(LADO_ESQUERDO_T, 0);
-                digitalWrite(LADO_FRENTE_T, 0);
-                digitalWrite(LADO_DIREITO_T, 0);
-                
-                Serial.begin(9600);
-                
-                Serial.print("1.0.11");
-              }
-
-              void loop() {
-                float distanciaEsquerda = medirDistancia(LADO_ESQUERDO_T, LADO_ESQUERDO_E, "Esquerdo");
-                float distanciaFrente = medirDistancia(LADO_FRENTE_T, LADO_FRENTE_E, "Frente");
-                float distanciaDireita = medirDistancia(LADO_DIREITO_T, LADO_DIREITO_E, "Direito");
-                
-                if (distanciaFrente < 20) {
-                  darRe();
-                } else { 
-                  ajustarPosicao(distanciaEsquerda, distanciaDireita);
-                }
-              }
-
-              float medirDistancia(int triggerPin, int echoPin, String lado) {
-                digitalWrite(triggerPin, 1);
-                delayMicroseconds(10);
-                digitalWrite(triggerPin, 0);
-
-                float tempo = pulseIn(echoPin, 1);
-                float distancia = (tempo * VELOCIDADE_DO_SOM) / 2 * 100;
-
-                Serial.print("Distancia em ");
-                Serial.print(lado);
-                Serial.print(": ");
-                Serial.print(distancia);
-                Serial.println(" cm");
-
-                return distancia;
-              }
-
-              void ajustarPosicao(float distanciaEsquerda, float distanciaDireita) {
-                if (distanciaEsquerda < 25 && distanciaDireita >= 25) {
-                  direita();
-                } else if (distanciaDireita < 25 && distanciaEsquerda >= 25) {
-                  esquerda();
-                } else {
-                  frente();
-                }
-              }
-
-              void darRe() {
-                Serial.print("RÉ");
-                digitalWrite(MOTOR_FRT_D, 0);
-                digitalWrite(MOTOR_FRT_E, 0);
-                digitalWrite(MOTOR_TRS_D, 0);
-                digitalWrite(MOTOR_TRS_E, 0);
-                digitalWrite(RE_FRT_D, 1);
-                digitalWrite(RE_FRT_E, 1);
-                digitalWrite(RE_TRS_D, 1);
-                digitalWrite(RE_TRS_E, 1);
-                delay(300);
-                pararMotores();
-              }
-
-              void direita() {
-                Serial.print("DIREITA");
-                digitalWrite(MOTOR_FRT_D, 0);
-                digitalWrite(MOTOR_FRT_E, 1);
-                digitalWrite(MOTOR_TRS_D, 0);
-                digitalWrite(MOTOR_TRS_E, 1);
-                digitalWrite(RE_FRT_D, 1);
-                digitalWrite(RE_FRT_E, 0);
-                digitalWrite(RE_TRS_D, 1);
-                digitalWrite(RE_TRS_E, 0);
-                delay(300);
-                pararMotores();
-              }
-
-              void esquerda() {
-                Serial.print("ESQUERDA");
-                digitalWrite(MOTOR_FRT_D, 1);
-                digitalWrite(MOTOR_FRT_E, 0);
-                digitalWrite(MOTOR_TRS_D, 1);
-                digitalWrite(MOTOR_TRS_E, 0);
-                digitalWrite(RE_FRT_D, 0);
-                digitalWrite(RE_FRT_E, 1);
-                digitalWrite(RE_TRS_D, 0);
-                digitalWrite(RE_TRS_E, 1);
-                delay(300);
-                pararMotores();
-              }
-              void frente() {
-                Serial.print("FRENTE");
-                digitalWrite(MOTOR_FRT_D, 1);
-                digitalWrite(MOTOR_FRT_E, 1);
-                digitalWrite(MOTOR_TRS_D, 1);
-                digitalWrite(MOTOR_TRS_E, 1);
-                digitalWrite(RE_FRT_D, 0);
-                digitalWrite(RE_FRT_E, 0);
-                digitalWrite(RE_TRS_D, 0);
-                digitalWrite(RE_TRS_E, 0);
-                delay(200);
-                pararMotores();
-              }
-
-              void pararMotores() {
-                digitalWrite(MOTOR_FRT_D, 0);
-                digitalWrite(MOTOR_FRT_E, 0);
-                digitalWrite(MOTOR_TRS_D, 0);
-                digitalWrite(MOTOR_TRS_E, 0);
-                digitalWrite(RE_FRT_D, 0);
-                digitalWrite(RE_FRT_E, 0);
-                digitalWrite(RE_TRS_D, 0);
-                digitalWrite(RE_TRS_E, 0);
-              }
-            </code>
-          </pre>
+          <div>
+            <p class="sobre-nos-p">
+              O nosso projeto foi inserido no conceito de Cyberpunk. Desta
+              forma, buscando oferecer uma visão tecnológica que refletisse a
+              complexidade dos ambientes urbanos.
+            </p>
+            <p class="sobre-nos-p">
+              Considerando que o carrinho foi projetado para participar de uma
+              competição de carros autônomos, realizada ao ar livre na AARC do
+              ABC, diversos fatores que simulam um ambiente urbano precisaram
+              ser levados em consideração, tais como o relevo do terreno, as
+              condições climáticas e a limitação de espaço a fim de se obter
+              sucesso na prova.
+            </p>
+          </div>
+          <img src="../img/Carrinho_01.png" alt="Imagem da bolha" />
         </section>
       </div>
+            <div class="home-page-3">
+      <h2 class="sobre-nos">Design do chassi</h2>
+      <section class="equipe">
+        <p class="sobre-nos-p">
+          Nosso chassi foi projetado no software de modelagem 3D Onshape, e
+          impresso na impressora de corte à laser, em MDF, que oferece a
+          combinação ideal entre leveza e resistência estrutural. Ele permitiu
+          que o chassi suportasse os componentes eletrônicos com estabilidade,
+          além de permanecer resistente durante testes e experimentações.
+        </p>
+        <img src="../img/Chassi_MDF.png" alt="Imagem do chassi" />
+      </section>
+      </div>
+      <h2 class="sobre-nos">Principais componentes e funcionamento</h2>
+      <section class="equipe">
+        <p class="sobre-nos-p">
+          <strong>Arduíno UNO:</strong> Atua como cérebro, programado para
+          controlar as ações do robô com base nos sinais recebidos dos sensores.
+          O cabo USB permite conectar a placa ao computador para programá-la, e
+          os pinos facilitam a conexão de outros componentes.
+        </p>
+        <img src="../img/arduino.png" alt="Imagem do Arduíno" />
+      </section>
+      <section class="equipe">
+        <p class="sobre-nos-p">
+          <strong>Sensor de Distância Ultrassônico HC-SR04:</strong> O sensor
+          ultrassônico detecta os obstáculos na frente do robô. Ele emite ondas
+          ultrassônicas de 40 kHz que ao refletirem em objetos próximos e
+          retornam ao sensor, que envia um pulso ao Arduino, indicando o tempo
+          que a onda levou para ir e voltar e então ao sensor calcular a
+          distância até os obstáculos e desviar deles.
+        </p>
+        <img src="../img/Fundo_Projeto.png" alt="Imagem do sensor" />
+      </section>
+      <section class="equipe">
+        <p class="sobre-nos-p">
+          <strong>Motor Shield L293D Ponte H:</strong> Usado para controlar a
+          direção e a velocidade dos motores. Ele usa a ponte H, que permite que
+          o motor DC gire tanto no sentido horário quanto anti-horário,
+          essencial para o controle do movimento do robô.
+        </p>
+        <img src="../img/chassi1.jpg" alt="Imagem do shield" />
+      </section>
+      <section class="equipe">
+        <p class="sobre-nos-p">
+          <strong>Fonte de Energia:</strong> O robô é alimentado por uma bateria
+          de 9V, responsável por fornecer energia à placa Arduino, aos motores e
+          aos outros componentes. A conexão é feita através de um plug com saída
+          P4, que liga a bateria diretamente à placa, garantindo um fornecimento
+          de energia confiável. Para ligar e desligar, uma chave gangorra de 2
+          terminais atua como interruptor principal, controlando o fluxo de
+          energia.
+        </p>
+        <img src="../img/chassi3.jpg" alt="Imagem da fonte de energia" />
+      </section>
+      <h2 class="sobre-nos">Código</h2>
     </div>
     <footer>
       <div class="footer-content">
