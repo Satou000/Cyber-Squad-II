@@ -1,3 +1,9 @@
+body {
+  background-image: url('../../img/fundo_projeto.png');
+  background-repeat: repeat;
+  background-size: auto;
+}
+
 .small-gap2 {
   padding-top: 5%;
 }
@@ -5,23 +11,25 @@
 .card-projeto {
   display: flex;
   align-items: flex-start;
-  gap: 200px; /* Espaçamento entre a coluna de texto e a imagem */
-  padding: 0px 100px 80px 80px;
-  margin-bottom: 0em;
+  gap: 50px; /* Espaçamento entre a coluna de texto e a imagem */
+  padding: 0px 20px 80px 20px;
+  margin: 0 auto; /* Centraliza a seção */
+  max-width: 1200px; /* Define uma largura máxima para a seção */
 }
 
-.sobre-nos-conteudo {
+.main-text-conteudo {
   display: flex;
   flex-direction: column;
 }
 
-.sobre-nos {
+.main-text {
   font-size: 2.5em;
   font-family: var(--titulos);
   color: #fff;
   margin-bottom: 0.5em; /* Reduza o valor conforme necessário */
   text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 10px #00aeff,
     0 0 30px #00aeff;
+  text-align: center; /* Centraliza o texto */
 }
 
 .conheca-nos {
@@ -34,7 +42,7 @@
     0 0 30px #00aeff;
 }
 
-.sobre-nos-p {
+.main-text-p {
   padding: 0px 0px 0px 0px;
   font-size: 1em;
   line-height: 2;
@@ -43,18 +51,6 @@
   font-family: var(--p-font);
   max-width: 1600px; /* Define uma largura máxima padrão */
   margin: 0 auto; /* Centraliza o parágrafo */
-}
-
-.card-projeto {
-  display: flex;
-  align-items: flex-start;
-  gap: 50px; /* Espaçamento entre a coluna de texto e a imagem */
-  padding: 0px 100px 50px 80px;
-  margin-bottom: 0em;
-}
-
-.card-projeto .sobre-nos-p {
-  max-width: 600px; /* Define uma largura máxima para o texto */
 }
 
 .card-projeto img {
@@ -70,19 +66,19 @@
 
 @media (max-width: 768px) {
   /* Ajuste este valor conforme necessário */
-  .equipe {
-    padding: 0px 10px 0px 10px;
+  .card-projeto {
     flex-direction: column;
-    gap: 0;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
   }
 
-  .equipe img {
+  .card-projeto img {
     max-width: 100%;
     margin-left: 0;
     margin-bottom: 20px;
   }
 
-  .sobre-nos {
+  .main-text {
     padding: 0px 20px 0px 20px;
   }
 
@@ -90,12 +86,12 @@
     padding: 0px 20px 0px 20px;
   }
 
-  .sobre-nos-conteudo {
+  .main-text-conteudo {
     flex-direction: column;
     padding: 0 20px;
   }
 
-  .sobre-nos-p {
+  .main-text-p {
     max-width: 100%;
     margin-bottom: 20px;
   }
@@ -103,7 +99,7 @@
 
 @media (max-width: 480px) {
   /* Ajuste este valor conforme necessário */
-  .sobre-nos-p {
+  .main-text-p {
     max-width: 100%;
     padding: 0 10px; /* Adiciona um pouco de padding para evitar que o texto encoste nas bordas */
   }
