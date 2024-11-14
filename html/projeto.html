@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyber Squad</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/layout_projeto/body_projeto.css" />
   </head>
   <body>
     <div class="home-page-2">
@@ -47,10 +48,10 @@
         </p>
       </div>
     </div>
-    <div class="small-gap">
+    <div class="small-gap2">
       <div class="home-page-3">
         <h2 class="sobre-nos">Temática</h2>
-        <section class="equipe">
+        <section class="card-projeto">
           <div>
             <p class="sobre-nos-p">
               O nosso projeto foi inserido no conceito de Cyberpunk. Desta
@@ -67,10 +68,14 @@
               sucesso na prova.
             </p>
           </div>
-          <img src="../img/temática.png" alt="Imagem da temática" />
+          <img
+            src="../img/temática.png"
+            alt="Imagem da temática"
+            class="com-borda"
+          />
         </section>
         <h2 class="sobre-nos">Design da bolha</h2>
-        <section class="equipe">
+        <section class="card-projeto">
           <div>
             <p class="sobre-nos-p">
               O nosso projeto foi inserido no conceito de Cyberpunk. Desta
@@ -89,21 +94,21 @@
           <img src="../img/Carrinho_01.png" alt="Imagem da bolha" />
         </section>
       </div>
-            <div class="home-page-3">
-      <h2 class="sobre-nos">Design do chassi</h2>
-      <section class="equipe">
-        <p class="sobre-nos-p">
-          Nosso chassi foi projetado no software de modelagem 3D Onshape, e
-          impresso na impressora de corte à laser, em MDF, que oferece a
-          combinação ideal entre leveza e resistência estrutural. Ele permitiu
-          que o chassi suportasse os componentes eletrônicos com estabilidade,
-          além de permanecer resistente durante testes e experimentações.
-        </p>
-        <img src="../img/Chassi_MDF.png" alt="Imagem do chassi" />
-      </section>
+      <div class="home-page-3">
+        <h2 class="sobre-nos">Design do chassi</h2>
+        <section class="equipe">
+          <p class="sobre-nos-p">
+            Nosso chassi foi projetado no software de modelagem 3D Onshape, e
+            impresso na impressora de corte à laser, em MDF, que oferece a
+            combinação ideal entre leveza e resistência estrutural. Ele permitiu
+            que o chassi suportasse os componentes eletrônicos com estabilidade,
+            além de permanecer resistente durante testes e experimentações.
+          </p>
+          <img src="../img/Chassi_MDF.png" alt="Imagem do chassi" />
+        </section>
       </div>
       <h2 class="sobre-nos">Principais componentes e funcionamento</h2>
-      <section class="equipe">
+      <section class="card-projeto">
         <p class="sobre-nos-p">
           <strong>Arduíno UNO:</strong> Atua como cérebro, programado para
           controlar as ações do robô com base nos sinais recebidos dos sensores.
@@ -112,7 +117,7 @@
         </p>
         <img src="../img/arduino.png" alt="Imagem do Arduíno" />
       </section>
-      <section class="equipe">
+      <section class="card-projeto">
         <p class="sobre-nos-p">
           <strong>Sensor de Distância Ultrassônico HC-SR04:</strong> O sensor
           ultrassônico detecta os obstáculos na frente do robô. Ele emite ondas
@@ -123,7 +128,7 @@
         </p>
         <img src="../img/Fundo_Projeto.png" alt="Imagem do sensor" />
       </section>
-      <section class="equipe">
+      <section class="card-projeto">
         <p class="sobre-nos-p">
           <strong>Motor Shield L293D Ponte H:</strong> Usado para controlar a
           direção e a velocidade dos motores. Ele usa a ponte H, que permite que
@@ -132,7 +137,7 @@
         </p>
         <img src="../img/chassi1.jpg" alt="Imagem do shield" />
       </section>
-      <section class="equipe">
+      <section class="card-projeto">
         <p class="sobre-nos-p">
           <strong>Fonte de Energia:</strong> O robô é alimentado por uma bateria
           de 9V, responsável por fornecer energia à placa Arduino, aos motores e
@@ -144,7 +149,6 @@
         </p>
         <img src="../img/chassi3.jpg" alt="Imagem da fonte de energia" />
       </section>
-      <h2 class="sobre-nos">Código</h2>
     </div>
     <footer>
       <div class="footer-content">
@@ -172,7 +176,7 @@
         </div>
         <div class="footer-contact">
           <h4>CONTATE-NOS!</h4>
-          <button class="botao-contato">Avalie nossa equipe</button>
+          <button class="botao-contato">Avalie nossa card-projeto</button>
           <button class="botao-contato">Fale com nossos membros</button>
         </div>
       </div>

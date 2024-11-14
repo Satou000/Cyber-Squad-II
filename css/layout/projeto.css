@@ -17,10 +17,7 @@
   font-family: var(--titulos);
   color: #fff;
   margin-bottom: 0em;
-  text-shadow: 
-    0 0 5px #00aeff,
-    0 0 10px #00aeff,
-    0 0 10px #00aeff,
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 10px #00aeff,
     0 0 30px #00aeff;
 }
 
@@ -28,12 +25,9 @@
   padding: 0px 0px 0px 80px;
   font-family: var(--titulos);
   font-size: 1.5em;
-  color: #fff;  
+  color: #fff;
   margin-bottom: 1em;
-  text-shadow: 
-    0 0 5px #00aeff,
-    0 0 10px #00aeff,
-    0 0 10px #00aeff,
+  text-shadow: 0 0 5px #00aeff, 0 0 10px #00aeff, 0 0 10px #00aeff,
     0 0 30px #00aeff;
 }
 
@@ -56,7 +50,8 @@
   border-radius: 10px;
 }
 
-@media (max-width: 768px) { /* Ajuste este valor conforme necessário */
+@media (max-width: 768px) {
+  /* Ajuste este valor conforme necessário */
   .equipe {
     padding: 0px 10px 0px 10px;
     flex-direction: column;
@@ -88,7 +83,8 @@
   }
 }
 
-@media (max-width: 480px) { /* Ajuste este valor conforme necessário */
+@media (max-width: 480px) {
+  /* Ajuste este valor conforme necessário */
   .sobre-nos-p {
     max-width: 100%;
     padding: 0 10px; /* Adiciona um pouco de padding para evitar que o texto encoste nas bordas */
