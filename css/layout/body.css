@@ -36,4 +36,13 @@ body {
   height: 100vh;
 }
 
+.home-page-2 {
+  background-image: url(../../img/Fundo_Projeto.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+}
 
