@@ -112,8 +112,35 @@
     <p>fotos com rolagem em javascript (2 botões), e se clicar deve expandir</p>
 
     <h2 class="main-text">Funcionamento geral</h2>
-    <p>vídeo</p>
+    <section class="card-projeto" id="funcionamento">
+      <p class="main-text-p">
+        Ao ligar a chave, a bateria alimenta a placa Arduíno e os motores, e o
+        carrinho entra em movimento. Em seguida, os sensores ultrassônicos
+        realizam o monitoramento do ambiente em busca de obstáculos. Caso algo
+        seja detectado ha uma distancia de ate 50 cm, o sistema ajusta o
+        movimento do carrinho:
+      </p>
 
+      <div class="video-container">
+        <video width="560" height="315" controls>
+          <source src="../videos/video-carrinho.mp4" type="video/mp4" />
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div>
+
+      <p class="main-text-p">
+        Quando há um obstáculo detectado ao lado direito, os motores do lado
+        direito avançam enquanto os do lado esquerdo recuam, de maneira a
+        permitir que o carrinho desvie para a esquerda. O mesmo acontece quando
+        algo é detectado no lado esquerdo, invertendo-se o movimento dos motores
+        para que os motores do lado esquerdo avancem e do lado direito recuem e
+        o carrinho vire para a direita. Já o sensor frontal, ao detectar um
+        obstáculo próximo, ativa a função ré, fazendo com que todos os motores
+        recuem para trás para evitar colisões. Esse ciclo se repete
+        continuamente, permitindo que o robô navegue de maneira autônoma pelo
+        ambiente.
+      </p>
+    </section>
     <h2 class="main-text">Principais componentes</h2>
     <p>
       4 cards com uma imagem cada, o nome, e um botão "saiba mais", que ao
@@ -130,8 +157,11 @@
     <p>texto: montagem final</p>
 
     <h2 class="main-text">Código arduino</h2>
-    <img src="../../img/carbon-code.png" alt="Código Arduino" id="carbon-code" />
-    sv
+    <img
+      src="../../img/carbon-code.png"
+      alt="Código Arduino"
+      id="carbon-code"
+    />
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
@@ -145,7 +175,7 @@
           <h4>LINKS</h4>
           <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="main-text.html">Sobre Nós</a></li>
+            <li><a href="sobre-nos.html">Sobre Nós</a></li>
             <li><a href="projeto.html">Trajetória</a></li>
           </ul>
         </div>
