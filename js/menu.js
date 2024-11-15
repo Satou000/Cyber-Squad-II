@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateImageVisibility() {
     imageBackgrounds.forEach((background, index) => {
-      background.classList.toggle("active", index === currentIndex);
+      background.style.display = index === currentIndex ? "flex" : "none";
     });
   }
 
@@ -52,7 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentIndex = 0;
 
   function updateCardVisibility() {
-    cardsWrapper.style.transform = `translateX(-${currentIndex * 250}px)`; // Ajuste conforme necessário
+    cards.forEach((card, index) => {
+      card.style.display =
+        index >= currentIndex && index < currentIndex + 4 ? "block" : "none";
+    });
   }
 
   prevCardBtn.addEventListener("click", () => {
@@ -90,4 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "none";
     }
   });
+
+  // Inicializa a visibilidade dos cards
+  updateCardVisibility();
 });
