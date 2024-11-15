@@ -1,0 +1,71 @@
+body {
+  color: white;
+  background-color: #21192c;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 200px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contato-item img {
+  width: 150px; /* Aumenta o tamanho da foto */
+  height: 150px; /* Aumenta o tamanho da foto */
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.info a {
+  color: #00aeff;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .contato-grid {
+    grid-template-columns: 1fr; /* Coloca os itens em uma coluna */
+  }
+
+  header {
+    margin-bottom: 150px; /* Ajusta o espaço entre a navegação e o conteúdo */
+  }
+}
