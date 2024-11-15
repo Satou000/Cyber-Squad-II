@@ -1,6 +1,5 @@
 body {
   color: white;
-  /* background-color: #0d031c; */
   background-color: #21192c;
 }
 
@@ -109,6 +108,14 @@ body {
   text-align: center;
 }
 
+.carrinho-centralizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .image-container {
   position: relative;
   display: flex;
@@ -175,15 +182,88 @@ body {
   background-color: #007bb5;
 }
 
-.carrinho-centralizado {
+.cards-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px; /* Espaçamento entre os botões e o contêiner de cards */
+}
+
+.cards-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 1000px; /* Ajuste conforme necessário */
+}
+
+.card {
+  flex: 0 0 250px; /* Ajuste conforme necessário */
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+.card-image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
+.card-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.saiba-mais-btn {
+  background-color: #00aeff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.saiba-mais-btn:hover {
+  background-color: #007bb5;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
   /* Ajuste este valor conforme necessário */
