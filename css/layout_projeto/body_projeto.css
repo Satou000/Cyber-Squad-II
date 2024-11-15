@@ -81,7 +81,10 @@ body {
 }
 
 #funcionamento {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .video-container {
@@ -97,6 +100,90 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+.arduino-centralizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaçamento entre os botões e o contêiner de imagens */
+  z-index: 1; /* Garante que o image-container fique abaixo do nav */
+}
+
+.image-wrapper {
+  position: relative;
+  width: 450px; /* Ajuste conforme necessário */
+  height: 300px; /* Ajuste conforme necessário */
+}
+
+.image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-background.active {
+  display: flex;
+}
+
+.project-image {
+  width: 100%;
+  height: 300px; /* Ajuste conforme necessário */
+  object-fit: cover;
+}
+
+.image-description {
+  width: 100%;
+  background-color: white;
+  color: #00aeff;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.nav-btn {
+  background-color: white;
+  border: none;
+  color: #00aeff;
+  font-size: 1.5em;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #007bb5;
+}
+
+.carrinho-centralizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
 
 @media (max-width: 768px) {
   /* Ajuste este valor conforme necessário */
@@ -132,10 +219,10 @@ body {
   }
 
   #carbon-code {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-}
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 480px) {

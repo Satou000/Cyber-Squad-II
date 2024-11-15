@@ -109,7 +109,40 @@
     </div>
 
     <h2 class="main-text">Imagens do projeto</h2>
-    <p>fotos com rolagem em javascript (2 botões), e se clicar deve expandir</p>
+    <div class="image-container">
+      <button id="prevBtn" class="nav-btn">&larr;</button>
+      <div class="image-wrapper">
+        <div class="image-background">
+          <img
+            src="../img/Chassi_Onshape.png"
+            class="project-image"
+            alt="Imagem 1"
+          />
+          <div class="image-description">Chassi Projetado</div>
+        </div>
+        <div class="image-background">
+          <img
+            src="../img/Chassi Vista Superior.png"
+            class="project-image"
+            alt="Imagem 2"
+          />
+          <div class="image-description">Vista Superior Chassi</div>
+        </div>
+        <div class="image-background">
+          <img
+            src="../img/Chassi_3D.png"
+            class="project-image"
+            alt="Imagem 3"
+          />
+          <div class="image-description">Vista Lateral do Chassi</div>
+        </div>
+        <div class="image-background">
+          <img src="../img/Bolha.png" class="project-image" alt="Imagem 4" />
+          <div class="image-description">Bolha Projetada</div>
+        </div>
+      </div>
+      <button id="nextBtn" class="nav-btn">&rarr;</button>
+    </div>
 
     <h2 class="main-text">Funcionamento geral</h2>
     <section class="card-projeto" id="funcionamento">
@@ -142,19 +175,95 @@
       </p>
     </section>
     <h2 class="main-text">Principais componentes</h2>
-    <p>
-      4 cards com uma imagem cada, o nome, e um botão "saiba mais", que ao
+    <!-- 4 cards com uma imagem cada, o nome, e um botão "saiba mais", que ao
       clicar abrirá um modal com um texto. setinhas para o lado que serão
       roláveis assim como o "imagens do projeto", onde vamos conseguir ver mais
-      4 itens. totalizando 8
-    </p>
+      4 itens. totalizando 8 -->
+
+    <div class="cards-container">
+      <button id="prevCardBtn" class="nav-btn">&larr;</button>
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="../img/image1.jpg" alt="Imagem 1" class="card-image" />
+          <h3 class="card-title">Nome 1</h3>
+          <button class="saiba-mais-btn" data-modal="modal1">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img src="../img/image2.jpg" alt="Imagem 2" class="card-image" />
+          <h3 class="card-title">Nome 2</h3>
+          <button class="saiba-mais-btn" data-modal="modal2">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img src="../img/image3.jpg" alt="Imagem 3" class="card-image" />
+          <h3 class="card-title">Nome 3</h3>
+          <button class="saiba-mais-btn" data-modal="modal3">Saiba Mais</button>
+        </div>
+        <div class="card">
+          <img src="../img/image4.jpg" alt="Imagem 4" class="card-image" />
+          <h3 class="card-title">Nome 4</h3>
+          <button class="saiba-mais-btn" data-modal="modal4">Saiba Mais</button>
+        </div>
+        <!-- Adicione mais 4 cards aqui -->
+      </div>
+      <button id="nextCardBtn" class="nav-btn">&rarr;</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-text"></div>
+      </div>
+    </div>
+
+    <div id="modal1" style="display: none">
+      <p>Texto do modal para o Nome 1.</p>
+    </div>
+    <div id="modal2" style="display: none">
+      <p>Texto do modal para o Nome 2.</p>
+    </div>
+    <div id="modal3" style="display: none">
+      <p>Texto do modal para o Nome 3.</p>
+    </div>
+    <div id="modal4" style="display: none">
+      <p>Texto do modal para o Nome 4.</p>
+    </div>
+    <!-- Adicione mais conteúdo do modal conforme necessário -->
 
     <h2 class="main-text">Circuito eletrônico</h2>
-    <p>imagem</p>
+    <section class="card-projeto">
+      <div class="arduino-centralizado">
+        <p class="main-text-p">
+          O circuito eletrônico do nosso projeto foi desenvolvido para garantir
+          a eficiência e a precisão do controle do carrinho autônomo. Utilizamos
+          uma placa Arduíno, sensores ultrassônicos, motores e uma bateria
+          recarregável.
+        </p>
+        <img
+          src="../img/arduino.png"
+          alt="Imagem do Circuito Eletrônico"
+          class="com-borda"
+        />
+      </div>
+    </section>
 
     <h2 class="main-text">Projeto final</h2>
-    <p>imagem</p>
-    <p>texto: montagem final</p>
+    <section class="card-projeto">
+      <div class="arduino-centralizado">
+        <p class="main-text-p">
+          Realizamos o desenvolvimento de um carro autônomo em escala, baseado
+          na interação entre a placa Arduíno com os componentes eletrônicos que
+          garantiram a mobilidade e eficiência na detecção de obstáculos. O
+          carrinho produzido foi utilizado para participação na competição
+          Robocar Race 2024, promovida pela FATEC Santo André e a UFABC.
+        </p>
+        <img
+          src="../img/chassi6.jpg"
+          alt="Imagem do Circuito Eletrônico"
+          class="com-borda"
+        />
+      </div>
+    </section>
 
     <h2 class="main-text">Código arduino</h2>
     <img
